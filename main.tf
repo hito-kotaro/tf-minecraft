@@ -106,7 +106,7 @@ resource "aws_security_group" "sg-mine" {
 resource "aws_instance" "ec2" {
   count         = var.ec2_cnt
   ami           = var.images.ap-northeast-1
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
   key_name      = var.key_name
   vpc_security_group_ids = [
     "${aws_security_group.sg-ssh.id}",

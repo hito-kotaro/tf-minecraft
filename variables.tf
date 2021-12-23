@@ -25,12 +25,17 @@ variable "images" {
     eu-central-1   = "ami-a8221fb5"
     ap-southeast-1 = "ami-68d8e93a"
     ap-southeast-2 = "ami-fd9cecc7"
-    ap-northeast-1 = "ami-0701e21c502689c31"
+    ap-northeast-1 = "ami-09d4b65ff082c3c6a"
     sa-east-1      = "ami-b52890a8"
   }
 }
 
+variable "instance_type"{
+  default = "t4g.small"
+}
+
 variable "key_name" {
+
 
 }
 
